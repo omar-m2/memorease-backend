@@ -6,7 +6,7 @@ require('dotenv').config();
 
 const app = express();
 
-const whitelist = ['https://memorease-lilac.vercel.app/'];
+const whitelist = ['https://memorease-lilac.vercel.app'];
 const corsOptions = {
   origin: (origin, callback) => {
     if (whitelist.indexOf(origin) !== -1 || !origin) {
