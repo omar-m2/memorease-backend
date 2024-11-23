@@ -8,7 +8,6 @@ MemorEase is a modern flashcard study tool designed to enhance learning and rete
 * [Features](#features)
 * [Technologies Used](#technologies-used)
 * [How To Use](#how-to-use)
-* [How To Run Locally](#how-to-run-locally)
 * [Future Improvements](#future-improvements)
 * [Project Structure](#project-structure)
 * [Contribution](#contribution)
@@ -46,7 +45,7 @@ Check out the live demo of the application [here]().
   * **MongoDB:** Database to store created flashcards.
 
 * **Deployment:**
-  * [**Vercel**](https://www.vercel.com/) for frontend hosting
+  * [**Vercel**](https://www.vercel.com/) for hosting
 
 ## How To Use
 
@@ -70,51 +69,6 @@ Check out the live demo of the application [here]().
   * View one card at a time and click on it to flip it and see answer or return to question.
   * Use "Previous" & "Next" buttons to navigate between your saved cards based on their creation order.
   * Track your progress through checking number of reviewed cards from the total saved cards.
-
-## How To Run Locally
-
-### Prerequisites
-
-* **Node.js (v16+):** Backend runtime environment.
-* **npm (v8+):** Node package manager.
-* **MongoDB:** Database server.
-
-### Installation Steps
-
-**1. Clone the repository:**
-
-```bash
-git clone https://github.com/omar-m2/memorease-backend
-```
-
-**2. Navigate to the project directory:**
-
-```bash
-cd memorease-backend
-```
-
-**3. Install backend dependencies:**
-
-```bash
-npm install
-```
-
-**5. Set up environment variables:**
-
-  * Create a .env file in the root directory and configure your MongoDB URI:
-
-      ```bash
-      MONGO_URI=your_mongodb_connection_string
-      PORT=5000
-      ```
-
-**6. Running the application:**
-
-  * **Backend:** Run the server.
-
-      ```bash
-      node server.js
-      ```
 
 ## Future Improvements
 
