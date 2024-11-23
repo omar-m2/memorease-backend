@@ -1,5 +1,5 @@
-import connectDB from './config/database';
-import Flashcard from './models/Flashcard';
+import connectDB from '../config/database';
+import Flashcard from '../models/Flashcard';
 
 export default async function handler(req, res) {
   await connectDB(); // Connect to the database
