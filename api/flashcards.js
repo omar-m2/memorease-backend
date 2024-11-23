@@ -4,6 +4,15 @@ import Flashcard from './models/Flashcard';
 export default async function handler(req, res) {
   await connectDB(); // Connect to the database
 
+  res.setHeader('Access-Control-Allow-Origin', 'https://memorease-lilac.vercel.app');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
+  if (req.method === 'OPTIONS') {
+    res.status(200).end(); // Respond to preflight requests
+    return;
+  }
+
   switch (req.method) {
     case 'POST':
       // Create a new flashcard
