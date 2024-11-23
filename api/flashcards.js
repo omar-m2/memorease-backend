@@ -4,6 +4,10 @@ import Flashcard from '../models/Flashcard';
 export default async function handler(req, res) {
   await connectDB(); // Connect to the database
 
+  module.exports = (req, res) => {
+    res.status(200).json({ message: 'Hello from MemorEase API' });
+  };  
+    
   res.setHeader('Access-Control-Allow-Origin', 'https://memorease-lilac.vercel.app');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
